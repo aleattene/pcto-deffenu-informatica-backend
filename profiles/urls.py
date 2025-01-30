@@ -16,6 +16,12 @@ Including another URLconf
 """
 
 from django.urls import path
+from profiles.api.views.sport_doctors import SportDoctorViewSet
+
+
+
+
+router.register(r'sport_doctors', SportDoctorViewSet, basename='sportdoctor')
 
 urlpatterns = [
     # Athletes
