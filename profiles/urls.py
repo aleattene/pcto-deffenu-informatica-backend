@@ -17,6 +17,13 @@ Including another URLconf
 
 from django.urls import path
 
+
+
+
+from profiles.api.views.trainers import TrainerViewSet
+
+router.register(r'trainers', TrainerViewSet, basename='trainers')
+
 urlpatterns = [
     # Athletes
     path('athletes/'),
