@@ -12,8 +12,10 @@ class AthleteViewSet(viewsets.ModelViewSet):
 
 
 # This Viewset automatically generates the following endpoints:
-# GET /athletes/ -> list all athletes
-# POST /athletes/ -> create a new athlete
-# GET /athletes/<id>/ -> retrieve an athlete
-# PUT /athletes/<id>/ -> update an athlete
-# DELETE /athletes/<id>/ -> delete an athlete
+# /athletes/ [GET]: list all athletes
+# /athletes/ [POST]: create a new athlete
+# /athletes/<id>/ [GET]: retrieve an athlete
+# /athletes/<id>/ [PUT]: update an athlete
+# /athletes/<id>/ [PATCH]: partial update an athlete
+# /athletes/<id>/ [DELETE]: delete an athlete
+
