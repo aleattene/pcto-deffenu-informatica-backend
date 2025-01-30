@@ -15,12 +15,9 @@ class Athlete(models.Model):
         related_name="athletes"
     )
 
-    trainer = models.ForeignKey(
+    trainers = models.ManyToManyField(
         "Trainer",
-        on_delete=models.SET_NULL,
-        null=True,
-        blank=True,
-        verbose_name="Trainer",
+        through="HistoricTrainerAthlete",
         related_name="athletes"
     )
 
