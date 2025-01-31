@@ -43,9 +43,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
+    # Third Parts
     'rest_framework',
-
+    'drf_spectacular',
+    'drf_spectacular_sidecar',
+    # Local Apps
     'profiles',
     'documentation',
     'payments',
@@ -63,6 +65,12 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'config.urls'
+
+
+REST_FRAMEWORK = {
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+}
+
 
 TEMPLATES = [
     {

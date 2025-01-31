@@ -19,9 +19,9 @@ Le principali funzionalità implementate includono:
 
 - Gestione anagrafiche (atleti, allenatori, medici, ecc.).
 - Amministrazione documenti (es. certificazioni mediche).
-- (ozpionale) Visualizzazione e reporting delle attività e dei tesseramenti.
 
-Nel presente progetto, lo studente acquisirà competenze di analisi dei requisiti, sviluppo software, gestione versionamento del codice tramite Git, lavoro in team e stesura di documentazione tecnica.
+Nel presente progetto, lo studente acquisirà competenze di analisi dei requisiti, sviluppo software, 
+gestione versionamento del codice tramite Git, lavoro in team e stesura di documentazione tecnica.
 
 <br>
 
@@ -30,6 +30,14 @@ Nel presente progetto, lo studente acquisirà competenze di analisi dei requisit
 ...
 
 <br>
+
+## Documentazione API disponibili
+
+Per conoscere le API disponibili, una volta lanciato il server, visitare il seguente link:
+```
+http://localhost:8000/api/swagger/
+```
+
 
 ## Contribuzione
 

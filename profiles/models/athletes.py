@@ -17,7 +17,7 @@ class Athlete(models.Model):
 
     trainers = models.ManyToManyField(
         "Trainer",
-        through="HistoricTrainerAthlete",
+        through="HistoricAthleteTrainer",
         related_name="athletes"
     )
 
@@ -39,8 +39,8 @@ class Category(models.Model):
     description = models.CharField(max_length=50)
 
     class Meta:
-        verbose_name = "Categoria"
-        verbose_name_plural = "Categorie"
+        verbose_name = "Categoria Atleta"
+        verbose_name_plural = "Categorie Atleti"
         # ordering = ["code"]
 
     def __str__(self):
