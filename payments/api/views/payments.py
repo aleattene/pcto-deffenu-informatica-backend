@@ -1,6 +1,6 @@
 from rest_framework import viewsets
 from payments.models.payments import Payment
-from payments.api.serializers import PaymentSerializer
+from payments.api.serializers.payments import PaymentSerializer
 
 
 class PaymentViewSet(viewsets.ModelViewSet):

@@ -1,21 +1,13 @@
-from rest_framework import viewsets
-from profiles.models import SportCertificate
-from profiles.api.serializers import SportCertificateSerializer
+from rest_framework import serializers
+from documentation.models.sport_certificates import SportCertificate
 
 
-class SportCertificateViewSet(viewsets.ModelViewSet):
-    """ViewSet for handle SportCertificate CRUD API"""
-    # Get all SportCertificates
-    queryset = SportCertificate.objects.all()
-    # Convert SportCertificate queryset to JSON
-    serializer_class = SportCertificateSerializer
+class SportCertificateSerializer(serializers.ModelSerializer):
+    """Serializer for SportCertificate model"""
+
+    class Meta:
+        model = SportCertificate
+        fields = '__all__'
 
 
-# This Viewset automatically generates the following endpoints:
-# /sport_certificates/ [GET]: list all SportCertificates
-# /sport_certificates/ [POST]: create a new SportCertificate
-# /sport_certificates/{id}/ [GET]: retrieve a SportCertificate
-# /sport_certificates/{id}/ [PUT]: update a SportCertificate
-# /sport_certificates/{id}/ [PATCH]: partial update a SportCertificate
-# /sport_certificates/{id}/ [DELETE]: delete a SportCertificate
 

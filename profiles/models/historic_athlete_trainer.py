@@ -1,22 +1,24 @@
 from django.db import models
-from profiles.models.athletes import Athlete
-from profiles.models.trainers import Trainer
 
 
-class HistoricTrainerAthlete(models.Model):
+class HistoricAthleteTrainer(models.Model):
     athlete = models.ForeignKey(
-        Athlete,
+        "Athlete",
         on_delete=models.PROTECT,
         related_name="historic_trainer_links"
     )
     trainer = models.ForeignKey(
-        Trainer,
+        "Trainer",
         on_delete=models.PROTECT,
         related_name="historic_athlete_links"
     )
 
     start_date = models.DateField()
     end_date = models.DateField(blank=True, null=True)
+
+    class Meta:
+        verbose_name = "Storico Atleta Allenatore"
+        verbose_name_plural = "Storico Atleti Allenatori"
 
     def __str__(self):
         return f"{self.athlete} - {self.trainer} (from {self.start_date} to {self.end_date})"

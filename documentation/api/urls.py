@@ -17,11 +17,11 @@ Including another URLconf
 
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from profiles.api.views.sport_doctors import SportCertificateViewSet
+from documentation.api.views.sport_certificates import SportCertificateViewSet
 
 # Create a router and register our viewset with it.
 router = DefaultRouter()
-router.register(r'sport_certificates', SportCertificateViewSet, basename='sport-certificate')
+router.register(r'sport-certificates', SportCertificateViewSet, basename='sport-certificates')
 
 urlpatterns = [
     path('', include(router.urls)),

@@ -4,8 +4,9 @@ from payments.api.views.payments import PaymentViewSet
 
 # Create a router and register our viewset with it.
 router = DefaultRouter()
-router.register(r'payments', PaymentViewSet, basename='payment')
+router.register(r'payments', PaymentViewSet, basename='payments')
 
 urlpatterns = [
+    # Endpoint: api/v1/payments/payments/ (GET, POST, PUT, DELETE)
     path('', include(router.urls)),
 ]
