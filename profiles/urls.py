@@ -23,6 +23,13 @@ from profiles.views.athletes import AthleteViewSet
 router = DefaultRouter()
 router.register(r'athletes', AthleteViewSet, basename='athlete')
 
+
+
+
+from profiles.api.views.trainers import TrainerViewSet
+
+router.register(r'trainers', TrainerViewSet, basename='trainers')
+
 urlpatterns = [
     # Athletes
     path("", include(router.urls)),
