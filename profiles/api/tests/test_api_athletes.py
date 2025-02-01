@@ -70,11 +70,16 @@ class AthleteAPITestCase(TestCase):
     def test_partial_update_athlete(self):
         updated_data = self.athlete_data.copy()
         updated_data["last_name"] = "Gialli"
+        updated_data["first_name"] = "Gianluca"
+        updated_data["fiscal_code"] = "LCBNCH02E20H501K"
         updated_data["category"] = self.category.id
-        response = self.client.put(self.athlete_detail_url, updated_data, format="json")
+        response = self.client.patch(self.athlete_detail_url, updated_data, format="json")
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.athlete.refresh_from_db()
         self.assertEqual(self.athlete.last_name, "Gialli")
+        self.assertEqual(self.athlete.first_name, "Gianluca")
+        self.assertEqual(self.athlete.fiscal_code, "LCBNCH02E20H501K")
+        self.assertEqual(self.athlete.category.id, self.category.id)
 
     # Delete Test: DELETE athlete
     def test_delete_athlete(self):
