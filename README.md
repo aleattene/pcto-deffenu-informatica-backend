@@ -33,10 +33,10 @@ gestione versionamento del codice tramite Git, lavoro in team e stesura di docum
 
 ## Documentazione API disponibili
 
-Per conoscere le API disponibili, una volta lanciato il server, visitare il seguente link:
-```
+Per conoscere le API disponibili, una volta lanciato il server, visitare il seguente link: 
+
 http://localhost:8000/api/swagger/
-```
+
 
 
 ## Contribuzione
