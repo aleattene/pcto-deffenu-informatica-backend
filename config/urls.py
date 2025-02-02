@@ -17,12 +17,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView, SpectacularRedocView
+from config.views import homepage
 
 urlpatterns = [
     # Admin Area
     path('admin/', admin.site.urls),
     # Homepage
-    # path('', include('home.urls')),
+    path("", homepage, name="homepage"),
     # Profiles
     # path('profiles/', include('profiles.urls')),
     # Documentation
