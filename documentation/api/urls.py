@@ -19,6 +19,9 @@ from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 from documentation.api.views.sport_certificates import SportCertificateViewSet
 
+# Application namespace
+app_name = 'documentation'
+
 # Create a router and register our viewset with it.
 router = DefaultRouter()
 router.register(r'sport-certificates', SportCertificateViewSet, basename='sport-certificates')
