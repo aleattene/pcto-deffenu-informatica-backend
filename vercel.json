@@ -19,7 +19,7 @@
         "dest": "config/wsgi.py"
       },
       {
-          "src": "/staticfiles/(.*)",
+          "src": "/static/(.*)",
           "dest": "/staticfiles/$1"
       }
     ]
