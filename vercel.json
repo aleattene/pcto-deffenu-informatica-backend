@@ -6,7 +6,12 @@
       "config": {
         "maxLambdaSize": "15mb",
         "runtime": "python3.11" }
+    },
+    {
+      "src": "build_files.sh",
+      "use": "@vercel/static"
     }
+
   ],
     "routes": [
       {
@@ -14,11 +19,8 @@
         "dest": "config/wsgi.py"
       },
       {
-          "src": "/static/(.*)",
+          "src": "/staticfiles/(.*)",
           "dest": "/staticfiles/$1"
       }
-    ],
-    "env": {
-      "DJANGO_COLLECTSTATIC": "1"
-    }
+    ]
 }
