@@ -17,5 +17,8 @@
           "src": "/static/(.*)",
           "dest": "/staticfiles/$1"
       }
-    ]
+    ],
+    "env": {
+      "DJANGO_COLLECTSTATIC": "1"
+    }
 }
