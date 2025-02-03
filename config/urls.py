@@ -18,6 +18,8 @@ from django.contrib import admin
 from django.urls import path, include
 from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView, SpectacularRedocView
 from config.views import homepage
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     # Admin Area
@@ -40,3 +42,8 @@ urlpatterns = [
     # UI ReDoc
     path("api/redoc/", SpectacularRedocView.as_view(url_name="schema"), name="redoc-ui"),
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.BASE_DIR / 'static')
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
