@@ -4,6 +4,9 @@ from profiles.api.views.athletes import AthleteViewSet
 from profiles.api.views.trainers import TrainerViewSet
 from profiles.api.views.sport_doctors import SportDoctorViewSet
 
+# Application namespace
+app_name = 'profiles'
+
 # Create a router and register our viewset with it.
 router = DefaultRouter()
 router.register(r'athletes', AthleteViewSet, basename='athletes')

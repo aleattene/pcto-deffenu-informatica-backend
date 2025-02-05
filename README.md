@@ -5,6 +5,16 @@
 **Istituto Scolastico**: [Nome / Indirizzo]
 
 <hr>
+
+![Python](https://badgen.net/badge/Built%20with/Python/blue)
+![Django](https://img.shields.io/badge/Built%20with-Django-092E20)
+![Django Rest Framework](https://img.shields.io/badge/Built%20with-DRF-red)
+[![Tests](https://github.com/aleattene/pcto-deffenu-informatica-backend/actions/workflows/tests_api.yml/badge.svg)](https://github.com/aleattene/pcto-deffenu-informatica-backend/actions/workflows/tests_api.yml)
+[![codecov](https://codecov.io/gh/aleattene/pcto-deffenu-informatica-backend/graph/badge.svg?token=N1AMPIX1XF)](https://codecov.io/gh/aleattene/pcto-deffenu-informatica-backend)
+[![GitHub commits](https://badgen.net/github/commits/aleattene/pcto-deffenu-informatica-backend)](https://github.com/aleattene/pcto-deffenu-informatica-backend/commits/)
+[![GitHub last commit](https://img.shields.io/github/last-commit/aleattene/pcto-deffenu-informatica-backend)](https://github.com/aleattene/pcto-deffenu-informatica-backend/commits/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/aleattene/pcto-deffenu-informatica-backend/pulls)
+[![License](https://img.shields.io/github/license/aleattene/pcto-deffenu-informatica-backend?color=blue)](https://github.com/aleattene/pcto-deffenu-informatica-backend/blob/main/LICENSE)
 <br>
 
 ## Descrizione Progetto
@@ -31,12 +41,16 @@ gestione versionamento del codice tramite Git, lavoro in team e stesura di docum
 
 <br>
 
+
+
+
+
 ## Documentazione API disponibili
 
-Per conoscere le API disponibili, una volta lanciato il server, visitare il seguente link:
-```
+Per conoscere le API disponibili, una volta lanciato il server, visitare il seguente link: 
+
 http://localhost:8000/api/swagger/
-```
+
 
 
 ## Contribuzione
