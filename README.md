@@ -30,6 +30,10 @@ Le principali funzionalità implementate includono:
 - Gestione anagrafiche (atleti, allenatori, medici, ecc.).
 - Amministrazione documenti (es. certificazioni mediche).
 
+API disponibili:
+
+http://pcto-deffenu.vercel.app/api/swagger/
+
 Nel presente progetto, lo studente acquisirà competenze di analisi dei requisiti, sviluppo software, 
 gestione versionamento del codice tramite Git, lavoro in team e stesura di documentazione tecnica.
 
