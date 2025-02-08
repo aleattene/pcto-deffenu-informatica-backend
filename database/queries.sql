@@ -17,7 +17,7 @@ UPDATE profiles_athlete
 SET place_of_birth = 'Torino'
 WHERE id=6;
 
-===========================
+/* ===================== */ 
 
 /* TRAINERS CRUD queries */
 
@@ -38,7 +38,7 @@ UPDATE profiles_trainer
 SET fiscal_code = 'RBTTYE55G10K987W'
 WHERE id=1;
 
-================================
+/* ========================== */
 
 /* SPORT DOCTORS CRUD queries */
 
@@ -59,7 +59,7 @@ UPDATE profiles_sportdoctor
 SET last_name = 'Tornaindietro'
 WHERE id=2;
 
-===========================
+/* ===================== */
 
 /* PAYMENTS CRUD queries */
 
@@ -80,7 +80,7 @@ UPDATE payments_payment
 SET amount = 1500
 WHERE id=2;
 
-=====================================
+/* =============================== */
 
 /* SPORT CERTIFICATES CRUD queries */
 
@@ -101,7 +101,7 @@ UPDATE documentation_sportcertificate
 SET issue_date = '2024-11-05', expiration_date = '2025-11-05'
 WHERE id=2;
 
-==============================
+/* ======================== */
 
 /* ATHLETE - CATEGORY query */
 
@@ -112,22 +112,4 @@ JOIN profiles_category AS pc
 ON pa.category_id = pc.id
 WHERE pc.code = 'AF';
 
-==============================
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ======================== */
