@@ -52,6 +52,24 @@ SET last_name = 'Tornaindietro'
 WHERE id=2;
 
 
+/* payments read */
+SELECT *
+FROM payments_payment
+
+/* payments create */
+INSERT INTO payments_payment (payment_date, amount, trainer_id)
+VALUES ('2024-10-01', 500, 2)
+
+/* payments delete */
+DELETE FROM payments_payment
+WHERE id = 3;
+
+/* payments update */
+UPDATE payments_payment
+SET amount = 1500
+WHERE id=2;
+
+
 
 
 
