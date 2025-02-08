@@ -88,6 +88,13 @@ SET issue_date = '2024-11-05', expiration_date = '2025-11-05'
 WHERE id=2;
 
 
+/* athletes-category-AF */
+SELECT first_name, last_name
+FROM profiles_athlete AS pa
+JOIN profiles_category AS pc 
+ON pa.category_id = pc.id
+WHERE pc.code = 'AF';
+
 
 
 
