@@ -70,6 +70,29 @@ SET amount = 1500
 WHERE id=2;
 
 
+/* sport-certificates read */
+SELECT *
+FROM documentation_sportcertificate
+
+/* sport-certificates create */
+INSERT INTO documentation_sportcertificate (issue_date, expiration_date, athlete_id, sport_doctor_id)
+VALUES ('2024-12-05', '2025-12-05', 1, 3)
+
+/* sport-certificates delete */
+DELETE FROM documentation_sportcertificate
+WHERE id = 1;
+
+/* sport-certificates update */
+UPDATE documentation_sportcertificate
+SET issue_date = '2024-11-05', expiration_date = '2025-11-05'
+WHERE id=2;
+
+
+
+
+
+
+
 
 
 
