@@ -113,3 +113,14 @@ ON pa.category_id = pc.id
 WHERE pc.code = 'AF';
 
 /* ======================== */
+
+/* Others queries */
+
+SELECT first_name, last_name, date_of_birth, place_of_birth
+FROM  profiles_athlete
+ORDER BY last_name DESC
+
+SELECT COUNT (id)
+FROM  profiles_athlete
+WHERE date_of_birth = '2000-01-01' AND  place_of_birth = 'Terni'
+
