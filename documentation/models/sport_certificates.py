@@ -30,11 +30,11 @@ class SportCertificate(models.Model):
         # ordering = ["-issued_date"]
 
     def __str__(self):
-        return f"Certificato emesso il {self.issued_date} da {self.doctor} per {self.athlete}"
+        return f"Certificato emesso il {self.issue_date} da {self.sport_doctor} per {self.athlete}"
 
     def __repr__(self):
-        return (f"SportCertificate, issued_date={self.issued_date}, "
-                f"expiration_date={self.expiration_date}, doctor={self.doctor}),"
+        return (f"SportCertificate, issued_date={self.issue_date}, "
+                f"expiration_date={self.expiration_date}, doctor={self.sport_doctor}),"
                 f"athlete={self.athlete}")
 
 
