@@ -7,5 +7,6 @@ class AthleteSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Athlete
-        fields = '__all__'
+        # fields = "__all__"
+        exclude = ("trainers",)
 
