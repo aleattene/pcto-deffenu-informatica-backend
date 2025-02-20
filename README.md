@@ -1,8 +1,12 @@
+## SM - Sport Management
+
+<hr>
+
 **Anno Scolastico**: 2024/2025
 
 **Studente**: Attene Davide
 
-**Istituto Scolastico**: [Nome / Indirizzo]
+**Istituto Scolastico**: I.T.T. "Attilio Deffenu" - Olbia
 
 <hr>
 
@@ -16,88 +20,148 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/aleattene/pcto-deffenu-informatica-backend/pulls)
 [![License](https://img.shields.io/github/license/aleattene/pcto-deffenu-informatica-backend?color=blue)](https://github.com/aleattene/pcto-deffenu-informatica-backend/blob/main/LICENSE)
 <br>
+<br>
 
-## Descrizione Progetto
+## Descrizione
 
-Il progetto [Nome Progetto] mira alla realizzazione di un [ ... ] per un'Associazione Sportiva Dilettantistica. 
+Il progetto **SM - Sport Management** mira alla realizzazione di una **Web App Responsive** per un'associazione sportiva.
 
-La pianificazione dello stesso segue il modello [Kamban] ed è dispoibile al seguete link:
-
-https://github.com/users/aleattene/projects/3/
+Le attività da svolgere, i task assegnati fanno riferimento al **progetto** [PCTO - Deffenu Informatica 2024/2025 ](https://github.com/users/aleattene/projects/3/)
 
 Le principali funzionalità implementate includono:
+- Gestione **anagrafiche** (atleti, allenatori, medici sportivi)
+- Gestione **documentale** (certificazioni medico sportive)
+- Gestione **pagamenti** (compensi allenatori)
 
-- Gestione anagrafiche (atleti, allenatori, medici, ecc.).
-- Amministrazione documenti (es. certificazioni mediche).
+API disponibili: <br>
+https://pcto-deffenu.vercel.app/api/swagger/
+<br><br>
+  
+## Struttura 
 
-API disponibili:
+Di seguito una breve descrizione della struttura del progetto:
 
-http://pcto-deffenu.vercel.app/api/swagger/
-
-Nel presente progetto, lo studente acquisirà competenze di analisi dei requisiti, sviluppo software, 
-gestione versionamento del codice tramite Git, lavoro in team e stesura di documentazione tecnica.
+| **Cartella/File** | **Descrizione** |
+|--|--|
+| `manage.py` | Script di gestione del progetto Django. |
+| `requirements.txt` | Elenco delle dipendenze Python del progetto. |
+| `README.md` | Documentazione e linee guida del progetto. |
 
 <br>
 
-## Struttura Progetto
+## Avvio del Progetto
 
-...
+**Clonare il Repository**
+```bash
+git clone https://github.com/username/pcto-deffenu-informatica-backend.git
+cd pcto-deffenu-informatica-backend
+````
 
+**Crearere il file `.env.local` nella root del progetto con le seguenti Variabili d'ambiente:**
+```bash
+# Development
+SECRET_KEY=your-django-secret-key
+DEBUG=True
+ENVIRONMENT=development
+```
+
+**Creare un ambiente virtuale ed attivarlo**
+```bash
+python -m venv nome_ambiente_virtuale
+source nome_ambiente/bin/activate		# Linux/Mac
+nome_ambiente\Scripts\activate			# Windows
+```
+
+**Installare le Dipendenze**
+```bash
+pip install -r requirements.txt
+```
+
+**Effettuare le Migrazioni**
+```bash
+python manage.py migrate
+```
+
+**Avviare il Server di Sviluppo**
+```bash
+python manage.py runserver
+```
 <br>
 
-
-
-
-
-## Documentazione API disponibili
-
-Per conoscere le API disponibili, una volta lanciato il server, visitare il seguente link: 
-
+## API Disponibili
+Le API sono documentate in modo interattivo con Swagger. Una volta avviato il server, puoi accedere alla documentazione all'indirizzo:
 http://localhost:8000/api/swagger/
 
+<br>
 
 
 ## Contribuzione
 
+Trattandosi di un progetto open-source è **aperto anche a contribuzioni esterne**. Se qualcuno fosse interessato, dopo aver creato una **issue** nel presente repository, può **attendere l'assegnazione del task** ed eventualmente procedere poi con l'implementazione di quanto approvato.
+
+Per prima cosa effettuare il **fork del repository** e clonarlo localmente con il seguente comando:
+
+```bash
+# HTTPS
+git clone https://github.com/username/pcto-deffenu-informatica-backend.git
 ```
-git clone https://github.com/<org>/<repo>.git
+oppure
+
+```bash
+SSH
+git clone git@github.com:username/pcto-deffenu-informatica-backend.git
 ```
 
-```
-cd <repo>
+Questo comando genererà una folder con lo stesso nome del repository all'interno del quale spostarsi con il comando:
+
+```bash
+cd pcto-deffenu-informatica-backend
 ```
 
-```
-git checkout -b nome_branch
+Avviare quindi il proprio IDE per visualizzare la **codebase** del progetto. Per contribuire creare immediatamente un **nuovo branch** partendo dal 'main' (branch principale) con il comando:
+
+```bash
+git checkout -b username-feature-da-implementare
 ```
 
+A questo punto ci si troverà posizionati direttamente nel nuovo branch, e sarà pertanto possibile **apportare** tutte le **modifiche** o nuove **feature** desiderate. Nel momento in cui si vuole far si che queste possano entrare a far parte della codebase, procedere nel seguente modo:
+
+```bash
+# Usare iterativamente lo stesso comando per tutti i file modificati
+git add nome-file-modificato
 ```
+ 
+E' anche possibile adottare un comando che ne permette l'aggiunta automatica di tutti i file, ma bisogna prestare maggiore attenzione in quanto saranno aggiunti all'area di staging tutti i file, inclusi magari quelli che non dovrebbero. Il comando è il seguente:
+```bash
+# Prestare la massima attenzione
 git add .
 ```
+Successivamente è quindi possibile effettuare il **commit** dei file con il seguente comando:
 
-```
-git commit -m "messaggio_commit"
+```bash
+git commit -m "messaggio-di-commit"
 ```
 
+ed infine **inviare** il tutto al proprio **repository remoto** (di cui si è fatto precedentemente il fork) con il comando:
+
+```bash
+git push origin username-feature-da-implementare
 ```
-git push origin feature/aggiunta-crud-atleti
-```
+
+Andare quindi al **proprio repository remoto**, ed aprire una **Pull Request** (bottone verde **Compare and Pull Request**) dal branch `username-feature-da-implementare`del proprio repository verso il `main` del repository originale.
+
+Attendere quindi che la **PR** venga **approvata**, **rifiutata** o richieda **modifiche** da apportare.
+
+Se **approvata**, recarsi nuovamente nel proprio repository remoto ed effettuare la **sincronizzazione** del proprio `main` con quello del repository originale (dove è stato effettuato il merge della Pull Request).
+
+Viceversa se vengono richieste delle **modifiche**, recarsi nuovamente nel proprio **branch locale**, effettuare le **modifiche** richieste ed **eseguire nuovamente** i comandi `add` , `commit` and `push` al fine di integrare la Pull Request con quanto precedentemente richiesto.
+
 <br>
-Apri una Pull Request (PR) da nome_tuo_branch (branch di origine) verso main (branch di destinazione).
 
-Attendi che il responsabile di progetto controlli e valuti il tuo codice. 
+  
+## Licenza
 
-Se non ti verranno richieste modifiche, approvato il lavoro, il tuo codice verrà fuso (merge) con il resto della codebase.
-
+Per questa tipologia di progetto, è stata scelta la licenza **MIT**: https://en.wikipedia.org/wiki/MIT_License
+  
 <br>
 
-## License
-
-...
-
-<br>
-
-## Relazione Finale
-
-- [link relazione studente]
-- [link relazione professionista]
