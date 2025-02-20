@@ -26,18 +26,18 @@
 
 Il progetto **SM - Sport Management** mira alla realizzazione di una **Web App Responsive** per un'associazione sportiva.
 
-Le attività da svolgere, i task assegnati fanno riferimento al **progetto** [PCTO - Deffenu Informatica 2024/2025 ](https://github.com/users/aleattene/projects/3/)
+Le attività da svolgere e i task assegnati fanno riferimento al **progetto** [PCTO - Deffenu Informatica 2024/2025 ](https://github.com/users/aleattene/projects/3/)
 
 Le principali funzionalità implementate includono:
 - Gestione **anagrafiche** (atleti, allenatori, medici sportivi)
 - Gestione **documentale** (certificazioni medico sportive)
 - Gestione **pagamenti** (compensi allenatori)
 
-API disponibili: <br>
+Documentazione API disponibili al seguente link: <br>
 https://pcto-deffenu.vercel.app/api/swagger/
 <br><br>
   
-## Struttura 
+## Struttura Progetto
 
 Di seguito una breve descrizione della struttura del progetto:
 
@@ -57,7 +57,7 @@ git clone https://github.com/username/pcto-deffenu-informatica-backend.git
 cd pcto-deffenu-informatica-backend
 ````
 
-**Crearere il file `.env.local` nella root del progetto con le seguenti Variabili d'ambiente:**
+**Creare il file `.env.local` nella root del progetto con le seguenti Variabili d'ambiente:**
 ```bash
 # Development
 SECRET_KEY=your-django-secret-key
@@ -88,7 +88,8 @@ python manage.py runserver
 ```
 <br>
 
-## API Disponibili
+
+## API disponibili
 Le API sono documentate in modo interattivo con Swagger. Una volta avviato il server, puoi accedere alla documentazione all'indirizzo:
 http://localhost:8000/api/swagger/
 
@@ -112,7 +113,7 @@ SSH
 git clone git@github.com:username/pcto-deffenu-informatica-backend.git
 ```
 
-Questo comando genererà una folder con lo stesso nome del repository all'interno del quale spostarsi con il comando:
+Questo comando genererà una folder/directory con lo stesso nome del repository, all'interno del quale spostarsi con il comando:
 
 ```bash
 cd pcto-deffenu-informatica-backend
@@ -124,7 +125,7 @@ Avviare quindi il proprio IDE per visualizzare la **codebase** del progetto. Per
 git checkout -b username-feature-da-implementare
 ```
 
-A questo punto ci si troverà posizionati direttamente nel nuovo branch, e sarà pertanto possibile **apportare** tutte le **modifiche** o nuove **feature** desiderate. Nel momento in cui si vuole far si che queste possano entrare a far parte della codebase, procedere nel seguente modo:
+A questo punto ci si troverà posizionati direttamente nel nuovo branch e sarà pertanto possibile **apportare** tutte le **modifiche** o nuove **feature** desiderate. Nel momento in cui si vuole far si che queste possano entrare a far parte della codebase principale, procedere nel seguente modo:
 
 ```bash
 # Usare iterativamente lo stesso comando per tutti i file modificati
