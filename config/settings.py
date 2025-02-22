@@ -31,12 +31,14 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG', default=False)
 
-ALLOWED_HOSTS = []
-# CORS_ALLOWED_ORIGINS = [
-#     "http://localhost:5173",
-#     "https://pcto-deffenu.netlify.app"
-# ]
-CORS_ALLOW_ALL_ORIGINS = True
+ALLOWED_HOSTS = [
+    "http://localhost:5173",
+    "https://pcto-deffenu.netlify.app"
+]
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:5173",
+    "https://pcto-deffenu.netlify.app"
+]
 
 
 # Application definition
