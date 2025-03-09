@@ -31,9 +31,10 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG', default=False)
 
-ALLOWED_HOSTS = ["pcto-deffenu.vercel.app"]
+ALLOWED_HOSTS = ["pcto-deffenu.vercel.app", ]
 CORS_ALLOWED_ORIGINS = [
-    "https://pcto-deffenu.netlify.app"
+    "https://pcto-deffenu.netlify.app",
+    "https://asd-management.netlify.app"
 ]
 
 
