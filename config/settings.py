@@ -33,7 +33,9 @@ DEBUG = os.getenv('DEBUG', default=False)
 
 ALLOWED_HOSTS = ["pcto-deffenu.vercel.app"]
 CORS_ALLOWED_ORIGINS = [
-    "https://pcto-deffenu.netlify.app"
+    "https://pcto-deffenu.netlify.app",
+    "https://asd-management.netlify.app"
+
 ]
 
 
